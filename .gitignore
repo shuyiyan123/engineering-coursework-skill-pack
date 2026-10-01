@@ -1,6 +1,7 @@
 # LaTeX 编译产物
 *.aux
 *.bbl
+!demos/fix-bbl/sample.bbl
 *.blg
 *.bcf
 *.log
