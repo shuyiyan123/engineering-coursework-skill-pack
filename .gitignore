@@ -1,0 +1,20 @@
+# LaTeX 编译产物
+*.aux
+*.bbl
+*.blg
+*.bcf
+*.log
+*.out
+*.toc
+*.run.xml
+*.synctex.gz
+*.pdf
+
+# demo 生成的图片
+demos/split-figures/*.png
+demos/redraw-figures/figs/
+
+# Python / 系统
+__pycache__/
+*.pyc
+.DS_Store

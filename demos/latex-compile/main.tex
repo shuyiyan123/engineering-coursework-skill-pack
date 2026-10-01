@@ -1,0 +1,26 @@
+\documentclass[a4paper,UTF8]{ctexart}
+\usepackage[backend=biber,style=gb7714-2015,gbpub=false]{biblatex}
+\addbibresource{ref.bib}
+
+% 显式指定静态 Noto CJK，避免可变 .ttc 报 sfnt 错误、Fandol 缺 ToUnicode。
+% 若字体不在该目录，请修改 Path，或临时删掉这组设置让 ctex 自动选字体。
+\setCJKmainfont{NotoSerifCJKsc-Regular.otf}[
+  Path=/home/machine/.local/share/fonts/notocjk/,
+  BoldFont=NotoSerifCJKsc-Bold.otf]
+\setCJKsansfont{NotoSansCJKsc-Regular.otf}[
+  Path=/home/machine/.local/share/fonts/notocjk/,
+  BoldFont=NotoSansCJKsc-Bold.otf]
+
+\title{中文 LaTeX 最小编译示例}
+\author{示例}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{引言}
+这是验证中文编译链的正文。引用规范\cite{jtgd50}与经典文献\cite{roscoe1968}，
+确认参考文献标点不乱码、字体正确嵌入且可复制。
+
+\printbibliography[heading=none]
+\end{document}
